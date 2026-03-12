@@ -1,7 +1,7 @@
 streamlit
-geopandas
 folium
 streamlit-folium
+geopandas==0.12.2
+fiona==1.9.4
 pyproj
 shapely
-fiona
