@@ -1,22 +1,25 @@
 # 🌿 Streamlit Wetlands Explorer
 
-Une application interactive pour visualiser et explorer les zones humides (wetlands) découpées en tuiles sur une carte satellite.
-L’utilisateur peut :
-- Visualiser une grille de tuiles sur la carte.
-- Cliquer sur une tuile pour zoomer et afficher les polygones de wetlands correspondants.
-- Naviguer facilement grâce à l’option plein écran.
+Application web interactive développée avec Streamlit permettant d'explorer une grille de tuiles géographiques et d'afficher les **zones humides** associés à chaque tuile.
+
+**UN POLYGONE REPRESENTE UNE PROBABILITÉ >60% D'OBTENIR UNE ZONE HUMIDE À PARTIR D'UNE APPROCHE MCA**
+
+Utilisation :
+- La carte principale affiche la grille des tuiles.
+- L'utilisateur clique sur une tuile.
+- L'application charge les données géographiques associées et affiche les zones humides.
 
 ---
 
 # 📂 Structure du projet
 ```
-streamlit_wetlands/
+streamlit_wetlands_explorer/
 │
 ├─ app.py                 # Code principal Streamlit
 ├─ requirements.txt       # Librairies Python nécessaires
-├─ runtime.txt            # Version Python pour Streamlit Cloud
 ├─ grid.geojson           # Grille de tuiles GeoJSON
-├─ tiles/                 # GeoJSON par tuile (id_001.geojson, id_002.geojson, ...)
+├─ tiles/                 # GeoJSON par tuile (id_1.geojson, id_2.geojson, ...) (wetlands)
+└── README.md
 ```
 
 ---
@@ -27,8 +30,8 @@ Lancer localement
 
 #### 1. Cloner le dépôt
 ```
-git clone https://github.com/tonusername/streamlit_wetlands.git
-cd streamlit_wetlands
+git clone https://github.com/thibaultmenez/streamlit_wetlands_explorer/
+cd streamlit_wetlands_explorer
 ```
 
 #### 2. Installer les dépendances
